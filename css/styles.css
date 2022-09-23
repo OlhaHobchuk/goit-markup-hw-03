@@ -75,7 +75,6 @@ body {
 }
 
  .footer .logo-link {
-    padding-top: 60px;
     margin-bottom: 20px;
 
 
@@ -233,6 +232,10 @@ body {
     width: 1px;
 }
 
+.features {
+    padding-bottom: 0;
+}
+
 .feature-list {
     display: flex;
 }
@@ -322,6 +325,7 @@ body {
 
 .team-list .item {
     margin-right: 30px;
+    width: calc((100% - 90px) / 4);
 }
 
 .team-list .item:last-child {
@@ -329,14 +333,18 @@ body {
 }
 
 .team-card {
-    width: 270px;
     box-shadow: var(--team-card-shadow);
     border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primary-background-color);
 }
 
 .team-img {
-    margin-bottom: 30px;
     display: block;
+}
+
+.team-card-body {
+    padding: 30px;
 }
 
 .team-member {
@@ -353,29 +361,19 @@ body {
 .team-description {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
 }
 
-
-
-
-
-
-
-
-
-
 /* Футер */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--footer-background-color);
 }
 
 .location {
-    padding-bottom: 60px;
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -459,16 +457,16 @@ body {
 }
 
 .work-list .item {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
    
-    border-bottom: 1px solid var(--card-border-color);
 }
 
 
 .work-list .item:nth-child(3n) {
     margin-right: 0;
+
 }
 
 .work-list .item:nth-last-child(-n + 3) {
@@ -477,12 +475,13 @@ body {
 }
 
 .work-img {
-    margin-bottom: 20px;
     display: block;
 }
 
 .card-content {
     padding: 20px 24px;
+
+    border: 1px solid var(--card-border-color);
 }
 
 .work-title {
